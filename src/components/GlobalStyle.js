@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
         outline: none;
         &:hover {
             background: #23d997;
-            color: white;
+            color: #1B1B1B;
         }
     }
     .greem {
