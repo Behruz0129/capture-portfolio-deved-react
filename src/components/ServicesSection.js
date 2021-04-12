@@ -76,7 +76,7 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     h3 {
-      margin-left: 1rem;
+      margin-left: 2rem;
       background: white;
       color: black;
       padding: 1rem;
