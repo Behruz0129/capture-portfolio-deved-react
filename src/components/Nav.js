@@ -6,7 +6,9 @@ const Nav = () => {
   return (
     <NavStyled>
       <h1>
-        <Link to='/'>Annimix Studio</Link>
+        <Link to='/' id='logo'>
+          Annimix Studio
+        </Link>
       </h1>
       <ul>
         <li>
