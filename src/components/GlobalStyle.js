@@ -9,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: #1b1b1b;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Comfortaa', cursive;
+        padding-top: 62.5px;
     }
 
     button {
@@ -45,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
     }
     span {
-        font-weight: bold;
+        font-weight: 900;
         color: #23d997;
     }
     p {

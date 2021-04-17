@@ -1,8 +1,21 @@
+//Framer motion
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
+
 const ContactMe = () => {
   return (
-    <div>
-      <h1>CONTACT: TWITTER, YOUTUBE, TELEGRAM, INSTAGRAM</h1>
-    </div>
+    <motion.div
+      exit='exit'
+      variants={pageAnimation}
+      initial='hidden'
+      animate='show'
+    >
+      <h1>CONTACT</h1>
+      <p>Email</p>
+      <p>Telegram</p>
+      <p>Instagram</p>
+      <p>Art Station</p>
+    </motion.div>
   );
 };
 

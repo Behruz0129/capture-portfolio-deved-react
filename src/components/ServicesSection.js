@@ -6,14 +6,14 @@ import icon1 from '../img/clock.svg';
 import icon2 from '../img/teamwork.svg';
 import icon3 from '../img/diaphragm.svg';
 import icon4 from '../img/money.svg';
-import home2 from '../img/home2.png';
+import home2 from '../img/home1.jpg';
 
 const ServicesSection = () => {
   return (
     <Services>
       <Description>
         <h2>
-          High <span>quality</span> services
+          My <span>personal</span> skills
         </h2>
         <Cards>
           <Card>
@@ -30,21 +30,21 @@ const ServicesSection = () => {
               <img src={icon2} alt='teamwork' />
               <h3>Teamwork</h3>
             </div>
-            <p>I can work with team very nice</p>
+            <p>If i have nice team, i work awesome together</p>
           </Card>
           <Card>
             <div className='icon'>
               <img src={icon3} alt='diaphragm' />
               <h3>Experience</h3>
             </div>
-            <p>I have much much experience. I worked with a lot of projects</p>
+            <p>I made a lot of projects and i have some experience</p>
           </Card>
           <Card>
             <div className='icon'>
               <img src={icon4} alt='affordable' />
               <h3>Affordable</h3>
             </div>
-            <p>300-400$/month</p>
+            <p>I made projects very affordable. Contact us</p>
           </Card>
         </Cards>
       </Description>

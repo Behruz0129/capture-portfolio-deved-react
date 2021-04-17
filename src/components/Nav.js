@@ -7,7 +7,7 @@ const Nav = () => {
     <NavStyled>
       <h1>
         <Link to='/' id='logo'>
-          Annimix Studio
+          Animmix Studio
         </Link>
       </h1>
       <ul>
@@ -33,6 +33,11 @@ const NavStyled = styled.nav`
   margin: auto;
   padding: 1rem 10rem;
   background-color: #282828;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   a {
     color: white;
     text-decoration: none;
@@ -44,7 +49,7 @@ const NavStyled = styled.nav`
   }
   #logo {
     font-size: 1.5rem;
-    font-family: 'Lobster', cursive;
+    font-family: 'Zen Dots', cursive;
     font-weight: lighter;
   }
   li {
