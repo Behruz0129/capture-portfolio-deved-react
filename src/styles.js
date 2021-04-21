@@ -7,6 +7,7 @@ export const About = styled.div`
   align-items: center;
   padding: 5rem 10rem;
   color: white;
+  position: relative;
 `;
 export const Description = styled.div`
   flex: 1.5;
@@ -17,6 +18,7 @@ export const Description = styled.div`
 `;
 export const Image = styled.div`
   flex: 1;
+  overflow: hidden;
   img {
     width: 100%;
     height: 80vh;

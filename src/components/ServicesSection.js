@@ -2,9 +2,9 @@
 import { About, Description, Image, Hide } from '../styles';
 import styled from 'styled-components';
 //import images
-import icon1 from '../img/clock.svg';
+import icon1 from '../img/fast.svg';
 import icon2 from '../img/teamwork.svg';
-import icon3 from '../img/diaphragm.svg';
+import icon3 from '../img/experience.svg';
 import icon4 from '../img/money.svg';
 import home2 from '../img/home1.jpg';
 
@@ -56,7 +56,6 @@ const ServicesSection = () => {
 };
 
 const Services = styled(About)`
-  background: #1a1a1a;
   h2 {
     padding-bottom: 5rem;
   }
@@ -75,6 +74,9 @@ const Card = styled.div`
   .icon {
     display: flex;
     align-items: center;
+    img {
+      width: 70px;
+    }
     h3 {
       margin-left: 2rem;
       background: white;
@@ -85,6 +87,7 @@ const Card = styled.div`
   p {
     padding: 3rem 0rem;
     margin-right: 0rem;
+    width: 80%;
   }
 `;
 

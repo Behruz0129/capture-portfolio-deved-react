@@ -95,7 +95,7 @@ const Description = styled.div`
   .line {
     width: 80%;
     height: 0.5rem;
-    background: #23d997;
+    background: #0096bb;
     margin: 1rem 0;
   }
   p {

@@ -31,7 +31,6 @@ const JobSkill = () => {
 //styled components
 
 const Job = styled.div`
-  background: #222222;
   padding: 3rem 10rem;
   color: white;
   h2 {

@@ -10,23 +10,39 @@ import firework1 from '../img/projects/firework1.gif';
 import grass1 from '../img/projects/grass1.jpg';
 //Framer motion
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import {
+  pageAnimation,
+  fade,
+  photoAnim,
+  lineAnim,
+  slider,
+  sliderContainer,
+} from '../animation';
 
 const MyProjects = () => {
   return (
     <Work variants={pageAnimation} exit='exit' initial='hidden' animate='show'>
+      <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+      </motion.div>
       <Movie>
-        <h2>Worn Paint</h2>
-        <div className='line'></div>
+        <motion.h2 variants={fade}>Worn Paint</motion.h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
         <Link to='/projects/worn-paint'>
-          <img src={paint1} alt='worn paint' />
+          <Hide>
+            <motion.img variants={photoAnim} src={paint1} alt='worn paint' />
+          </Hide>
         </Link>
       </Movie>
       <Movie>
-        <h2>Complex Shapes</h2>
-        <div className='line'></div>
+        <motion.h2 variants={fade}>Complex Shapes</motion.h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
         <Link to='/projects/complex-shapes'>
-          <img src={complex1} alt='complex' />
+          <Hide>
+            <motion.img variants={photoAnim} src={complex1} alt='complex' />
+          </Hide>
         </Link>
       </Movie>
       <Movie>
@@ -73,7 +89,7 @@ const Movie = styled.div`
   display: inline-block;
   .line {
     height: 0.5rem;
-    background: #ccc;
+    background: #0096bb;
     margin-bottom: 3rem;
   }
   img {
@@ -81,6 +97,29 @@ const Movie = styled.div`
     height: 50vh;
     object-fit: cover;
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
+`;
+
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 30vh;
+  background-color: #0096bb;
+  z-index: 1000;
+`;
+
+const Frame2 = styled(Frame1)`
+  top: 40%;
+  background-color: #009cc4;
+`;
+const Frame3 = styled(Frame1)`
+  top: 70%;
+  background-color: #00b8e6;
 `;
 
 export default MyProjects;
