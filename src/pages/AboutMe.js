@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
 const AboutMe = () => {
+  window.scrollTo(0, 0);
   return (
     <motion.div
       exit='exit'

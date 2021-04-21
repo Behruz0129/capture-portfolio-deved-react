@@ -20,6 +20,7 @@ import {
 } from '../animation';
 
 const MyProjects = () => {
+  window.scrollTo(0, 0);
   return (
     <Work variants={pageAnimation} exit='exit' initial='hidden' animate='show'>
       <motion.div variants={sliderContainer}>

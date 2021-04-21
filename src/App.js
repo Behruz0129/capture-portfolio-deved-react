@@ -10,9 +10,11 @@ import MovieDetail from './components/MovieDetail';
 import { Switch, Route, useLocation } from 'react-router-dom';
 //framer motion
 import { AnimatePresence } from 'framer-motion';
+import Footer from './components/Footer';
 
 function App() {
   const location = useLocation();
+
   return (
     <div className='App'>
       <GlobalStyle />
@@ -33,6 +35,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

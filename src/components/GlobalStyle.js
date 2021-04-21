@@ -1,10 +1,35 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+    ::-moz-selection {
+        color: white;
+        background: #363636;
+    }
+
+    ::selection {
+        color: white;
+        background: #363636;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #353535;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #007997;
+        transition: all 0.5s ease;
+        &:hover {
+            background-color: #006880;
+        }
+    }
+
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box
+        box-sizing: border-box;
+        scroll-behavior: smooth;
     }
 
     body {

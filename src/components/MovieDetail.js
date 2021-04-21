@@ -20,6 +20,7 @@ const MovieDetail = () => {
     const currentMovie = movies.filter(stateMovie => stateMovie.url === url);
     setMovie(currentMovie[0]);
   }, [movies, url]);
+  window.scrollTo(0, 0);
   return (
     <>
       {movie && (

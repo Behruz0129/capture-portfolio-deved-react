@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
 const ContactMe = () => {
+  window.scrollTo(0, 0);
   return (
     <motion.div
       exit='exit'
