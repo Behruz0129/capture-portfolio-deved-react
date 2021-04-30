@@ -7,10 +7,19 @@ import icon2 from '../img/teamwork.svg';
 import icon3 from '../img/experience.svg';
 import icon4 from '../img/money.svg';
 import home2 from '../img/home1.jpg';
+//scroll animations
+import { scrollSection } from '../animation';
+import { useScroll } from './useScroll';
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      ref={element}
+      variants={scrollSection}
+      initial='hidden'
+      animate={controls}
+    >
       <Description>
         <h2>
           My <span>personal</span> skills

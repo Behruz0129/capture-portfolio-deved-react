@@ -70,7 +70,7 @@ export const MovieState = () => {
       ],
     },
     {
-      name: 'Firework Animation',
+      name: 'Firework',
       mainImg: firework1,
       secondaryImg: firework2,
       url: '/projects/firework-animation',

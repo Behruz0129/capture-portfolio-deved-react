@@ -18,9 +18,12 @@ import {
   slider,
   sliderContainer,
 } from '../animation';
+import { useScroll } from '../components/useScroll';
 
 const MyProjects = () => {
-  window.scrollTo(0, 0);
+  const [element1, controls1] = useScroll();
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
     <Work variants={pageAnimation} exit='exit' initial='hidden' animate='show'>
       <motion.div variants={sliderContainer}>
@@ -46,25 +49,50 @@ const MyProjects = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
-        <h2>Kingston Logo</h2>
-        <div className='line'></div>
+      <Movie
+        ref={element1}
+        variants={fade}
+        initial='hidden'
+        animate={controls1}
+      >
+        <motion.h2 variants={fade}>Kingston Logo</motion.h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
         <Link to='/projects/kingston-logo'>
-          <img src={kingston1} alt='kingston 3d logo' />
+          <Hide>
+            <motion.img
+              variants={photoAnim}
+              src={kingston1}
+              alt='kingston 3d logo'
+            />
+          </Hide>
         </Link>
       </Movie>
-      <Movie>
-        <h2>Firework</h2>
-        <div className='line'></div>
+      <Movie
+        ref={element2}
+        variants={fade}
+        initial='hidden'
+        animate={controls2}
+      >
+        <motion.h2 variants={fade}>Firework</motion.h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
         <Link to='/projects/firework-animation'>
-          <img src={firework1} alt='firework' />
+          <Hide>
+            <motion.img variants={photoAnim} src={firework1} alt='firework' />
+          </Hide>
         </Link>
       </Movie>
-      <Movie>
-        <h2>Grass</h2>
-        <div className='line'></div>
+      <Movie
+        ref={element3}
+        variants={fade}
+        initial='hidden'
+        animate={controls3}
+      >
+        <motion.h2 variants={fade}>Grass</motion.h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
         <Link to='/projects/grass'>
-          <img src={grass1} alt='grass' />
+          <Hide>
+            <motion.img variants={photoAnim} src={grass1} alt='grass' />
+          </Hide>
         </Link>
       </Movie>
     </Work>
@@ -84,10 +112,14 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
-const Movie = styled.div`
+const Movie = styled(motion.div)`
   padding-bottom: 5rem;
   width: 45%;
   display: inline-block;
+  transition: 0.5s ease all;
+  &:hover {
+    transform: scale(1.05);
+  }
   .line {
     height: 0.5rem;
     background: #0096bb;

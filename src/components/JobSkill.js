@@ -8,10 +8,20 @@ import premireProLogo from '../img/premire-pro-logo.png';
 import unityLogo from '../img/unity-logo.png';
 import unrealIngineLogo from '../img/unreal-ingine-logo.png';
 import cshLogo from '../img/csh-logo.png';
+//scroll animations
+import { scrollSection } from '../animation';
+import { useScroll } from './useScroll';
+import { motion } from 'framer-motion';
 
 const JobSkill = () => {
+  const [element, controls] = useScroll();
   return (
-    <Job>
+    <Job
+      ref={element}
+      variants={scrollSection}
+      initial='hidden'
+      animate={controls}
+    >
       <h2>
         My <span>job</span> skills
       </h2>
@@ -30,7 +40,7 @@ const JobSkill = () => {
 
 //styled components
 
-const Job = styled.div`
+const Job = styled(motion.div)`
   padding: 3rem 10rem;
   color: white;
   h2 {

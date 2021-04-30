@@ -49,6 +49,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div className='cont2'>
+        <p>
+          Developed by <a href='#'>Behruz Berdiyev</a> | 2021
+        </p>
+      </div>
     </FooterStyled>
   );
 };
@@ -105,6 +110,23 @@ const FooterStyled = styled.div`
           color: white;
           box-shadow: 0px 0px 20px #e9e9e9;
         }
+      }
+    }
+  }
+  .cont2 {
+    background: #007a99;
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 1rem;
+      padding: 0;
+      color: #080808;
+      a {
+        color: #000000;
+        font-weight: 600;
+        text-decoration: none;
       }
     }
   }
