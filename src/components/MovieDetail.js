@@ -8,6 +8,7 @@ import { MovieState } from '../movieState';
 //Framer motion
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import { ScrollTop } from '../components/ScrollTop';
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -55,12 +56,14 @@ const MovieDetail = () => {
           </Block>
         </Details>
       )}
+      <ScrollTop />
     </>
   );
 };
 
 const Details = styled(motion.div)`
   color: white;
+  padding-top: 5rem;
 `;
 
 const Headline = styled.div`
@@ -71,15 +74,24 @@ const Headline = styled.div`
   place-content: center;
   margin: auto;
   padding: 1rem 10rem;
-  background-color: #242424;
   margin-bottom: 2rem;
 `;
 
 const Block = styled.div`
-  min-height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0rem 8rem;
+  padding: 0rem 10rem;
+  margin-bottom: 5rem;
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0rem;
+  }
+  @media (max-width: 800px) {
+    padding: 0rem 5rem;
+  }
+  @media (max-width: 500px) {
+    padding: 0rem 2rem;
+  }
 `;
 const Image = styled.div`
   img {
@@ -88,7 +100,9 @@ const Image = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 2rem;
+  }
+  @media (max-width: 750px) {
+    order: 1;
   }
 `;
 const Description = styled.div`
@@ -102,6 +116,10 @@ const Description = styled.div`
   p {
     width: 90%;
     word-wrap: break-word;
+  }
+  @media (max-width: 750px) {
+    order: 2;
+    padding: 3rem 0;
   }
 `;
 

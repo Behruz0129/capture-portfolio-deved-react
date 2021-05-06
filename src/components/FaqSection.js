@@ -4,8 +4,6 @@ import { About } from '../styles';
 import Toggle from './Toggle';
 //framer motion
 import { AnimateSharedLayout } from 'framer-motion';
-import { motion } from 'framer-motion';
-import { useAnimation } from 'framer-motion';
 import { useScroll } from './useScroll';
 import { scrollSection } from '../animation';
 

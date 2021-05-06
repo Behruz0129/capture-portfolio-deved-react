@@ -22,7 +22,14 @@ export const titleAnim = {
 
 export const fade = {
   hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { ease: 'easeOut', duration: 0.5 } },
+  show: {
+    opacity: 1,
+    transition: {
+      ease: 'easeOut',
+      duration: 0.25,
+      staggerChildren: 0.25,
+    },
+  },
 };
 
 export const photoAnim = {
@@ -33,6 +40,11 @@ export const photoAnim = {
 export const lineAnim = {
   hidden: { width: '0%' },
   show: { width: '100%', transition: { ease: 'easeOut', duration: 0.5 } },
+};
+
+export const smallLineAnim = {
+  hidden: { width: '0%' },
+  show: { width: '70%', transition: { ease: 'easeOut', duration: 2 } },
 };
 
 export const slider = {

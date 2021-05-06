@@ -32,10 +32,25 @@ const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
     }
 
+    html {
+        @media(max-width: 1000px) {
+            font-size: 80%;
+        }
+        @media(max-width: 450px) {
+            font-size: 70%;
+        }
+        @media(max-width: 450px) {
+            font-size: 60%;
+        }
+        @media(max-width: 300px) {
+            font-size: 50%;
+        }
+    }
+
     body {
         background-color: #1b1b1b;
         font-family: 'Comfortaa', cursive;
-        padding-top: 62.5px;
+        overflow-x: hidden;
     }
 
     button {
@@ -48,12 +63,16 @@ const GlobalStyle = createGlobalStyle`
         color: white;
         transition: all 0.5s ease;
         outline: none;
+        margin: 0.5rem 1rem;
         &:hover {
             background: #0096bb;
         }
     }
     .greem {
-        margin-right: 1rem;
+        margin-left: 0rem;
+        @media(max-width: 1000px) {
+            margin-left: 0.5rem
+        }
     }
     h2 {
         font-weight: lighter;

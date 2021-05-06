@@ -1,5 +1,5 @@
 //import styled
-import { About, Description, Image, Hide } from '../styles';
+import { About, Description, Image } from '../styles';
 import styled from 'styled-components';
 //import images
 import icon1 from '../img/fast.svg';
@@ -57,9 +57,9 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
-      <Image>
+      <ServicesImage>
         <img src={home2} alt='Nazarqulov Aziz' />
-      </Image>
+      </ServicesImage>
     </Services>
   );
 };
@@ -72,10 +72,27 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem;
   }
+  @media (max-width: 1200px) {
+    padding: 5rem;
+  } ;
 `;
+
+const ServicesImage = styled(Image)`
+  @media (max-width: 1050px) {
+    display: none;
+  }
+`;
+
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const Card = styled.div`
   display: flex;
@@ -91,12 +108,30 @@ const Card = styled.div`
       background: white;
       color: black;
       padding: 1rem;
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
   }
   p {
     padding: 3rem 0rem;
     margin-right: 0rem;
     width: 80%;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    flex-direction: row;
+    .icon {
+      padding-right: 5rem;
+    }
+  }
+  @media (max-width: 400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      padding: 0;
+    }
   }
 `;
 

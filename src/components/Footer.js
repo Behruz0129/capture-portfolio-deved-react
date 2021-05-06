@@ -68,6 +68,7 @@ const FooterStyled = styled.div`
     a {
       color: #222222;
       text-decoration: none;
+      cursor: pointer;
     }
   }
   .cont1 {
@@ -112,6 +113,21 @@ const FooterStyled = styled.div`
         }
       }
     }
+    @media (max-width: 1200px) {
+      padding: 1rem 5rem;
+    }
+    @media (max-width: 650px) {
+      flex-direction: column;
+      .box1,
+      .box2 {
+        padding: 1rem 0rem;
+      }
+      .logo {
+        span {
+          text-align: center !important;
+        }
+      }
+    }
   }
   .cont2 {
     background: #007a99;
@@ -123,6 +139,7 @@ const FooterStyled = styled.div`
       font-size: 1rem;
       padding: 0;
       color: #080808;
+      text-align: center;
       a {
         color: #000000;
         font-weight: 600;

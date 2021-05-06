@@ -18,6 +18,7 @@ export const MovieState = () => {
       secondaryImg: paint2,
       url: '/projects/worn-paint',
       type: 'video',
+      id: 0,
       awards: [
         {
           title: 'About Project',
@@ -37,6 +38,7 @@ export const MovieState = () => {
       secondaryImg: complex2,
       url: '/projects/complex-shapes',
       type: 'video',
+      id: 1,
       awards: [
         {
           title: 'About Project',
@@ -56,6 +58,7 @@ export const MovieState = () => {
       secondaryImg: kingston2,
       url: '/projects/kingston-logo',
       type: 'image',
+      id: 2,
       awards: [
         {
           title: 'About Project',
@@ -75,6 +78,7 @@ export const MovieState = () => {
       secondaryImg: firework2,
       url: '/projects/firework-animation',
       type: 'video',
+      id: 3,
       awards: [
         {
           title: 'About Project',
@@ -94,6 +98,7 @@ export const MovieState = () => {
       secondaryImg: grass2,
       url: '/projects/grass',
       type: 'image',
+      id: 4,
       awards: [
         {
           title: 'About Project',
