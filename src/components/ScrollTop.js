@@ -9,7 +9,7 @@ export const ScrollTop = () => {
       top: 0,
       left: 0,
     });
-  }, pathname);
+  }, [pathname]);
 
   return null;
 };

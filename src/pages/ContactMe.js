@@ -1,4 +1,3 @@
-import { useState } from 'react';
 //styled
 import styled from 'styled-components';
 import { About } from '../styles';

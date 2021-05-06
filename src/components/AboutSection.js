@@ -46,6 +46,7 @@ const AboutSection = () => {
           <a
             href='https://drive.google.com/file/d/18mDlGGX3LES49PmeFTSm82N6Jycg_sEU/view?usp=sharing'
             target='_blank'
+            rel='noreferrer'
           >
             <motion.button variants={fade}>
               <FontAwesomeIcon icon={faDownload} size='1x' /> Resume

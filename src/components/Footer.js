@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <FooterStyled>
       <div className='topper'>
-        <a
+        <span
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
           <FontAwesomeIcon icon={faArrowUp} />
-        </a>
+        </span>
       </div>
       <div className='cont1'>
         <div className='box1'>
@@ -29,29 +29,39 @@ const Footer = () => {
           <a
             href='https://www.instagram.com/________legion_._._._/'
             target='_blank'
+            rel='noreferrer'
           >
             <FontAwesomeIcon icon={['fab', 'instagram']} size='2x' />
           </a>
           <a
             href='https://www.youtube.com/channel/UCh_hZ2kei-rEgiqOwDN-PJQ'
             target='_blank'
+            rel='noreferrer'
           >
             <FontAwesomeIcon icon={['fab', 'youtube']} size='2x' />
           </a>
-          <a href='https://tiktok.com' target='_blank'>
+          <a href='https://tiktok.com' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={['fab', 'tiktok']} size='2x' />
           </a>
-          <a href='https://artstation.com' target='_blank'>
+          <a href='https://artstation.com' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={['fab', 'artstation']} size='2x' />
           </a>
-          <a href='https://t.me/curious_behruz' target='_blank'>
+          <a
+            href='https://t.me/curious_behruz'
+            target='_blank'
+            rel='noreferrer'
+          >
             <FontAwesomeIcon icon={['fab', 'telegram']} size='2x' />
           </a>
         </div>
       </div>
       <div className='cont2'>
         <p>
-          Developed by <a href='#'>Behruz Berdiyev</a> | 2021
+          Developed by{' '}
+          <a href='https://behruzberdiyev.netlify.app' rel='noreferrer'>
+            Behruz Berdiyev
+          </a>{' '}
+          | 2021
         </p>
       </div>
     </FooterStyled>
@@ -65,7 +75,7 @@ const FooterStyled = styled.div`
     display: grid;
     place-content: center;
     padding: 0.5rem 10rem;
-    a {
+    span {
       color: #222222;
       text-decoration: none;
       cursor: pointer;

@@ -38,7 +38,7 @@ const Nav = ({ isOpen, setIsOpen }) => {
       {isOpen && (
         <div className='bg' onClick={closeWithBg}>
           <div className='nav' ref={bgRef}>
-            <div class='ul'>
+            <div className='ul'>
               <li>
                 <Link className='link' to='/'>
                   About
@@ -59,22 +59,28 @@ const Nav = ({ isOpen, setIsOpen }) => {
               <a
                 href='https://www.instagram.com/________legion_._._._/'
                 target='_blank'
+                rel='noreferrer'
               >
                 <FontAwesomeIcon icon={['fab', 'instagram']} size='2x' />
               </a>
               <a
                 href='https://www.youtube.com/channel/UCh_hZ2kei-rEgiqOwDN-PJQ'
                 target='_blank'
+                rel='noreferrer'
               >
                 <FontAwesomeIcon icon={['fab', 'youtube']} size='2x' />
               </a>
-              <a href='https://tiktok.com' target='_blank'>
+              <a href='https://tiktok.com' target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={['fab', 'tiktok']} size='2x' />
               </a>
-              <a href='https://artstation.com' target='_blank'>
+              <a href='https://artstation.com' target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={['fab', 'artstation']} size='2x' />
               </a>
-              <a href='https://t.me/curious_behruz' target='_blank'>
+              <a
+                href='https://t.me/curious_behruz'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <FontAwesomeIcon icon={['fab', 'telegram']} size='2x' />
               </a>
             </div>

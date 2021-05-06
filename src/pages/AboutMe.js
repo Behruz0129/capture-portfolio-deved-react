@@ -1,7 +1,6 @@
 //import components
 import AboutSection from '../components/AboutSection';
 import FaqSection from '../components/FaqSection';
-import JobSkill from '../components/JobSkill';
 import ServicesSection from '../components/ServicesSection';
 import { ScrollTop } from '../components/ScrollTop';
 //Framer motion
