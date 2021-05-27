@@ -110,7 +110,7 @@ const Wrap = styled.div`
 const Hide = styled.div`
   overflow: hidden;
   img {
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 30px #ccc;
   }
 `;
 
