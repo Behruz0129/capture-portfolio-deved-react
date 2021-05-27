@@ -9,8 +9,8 @@ import firework1 from './img/projects/firework1.gif';
 import firework2 from './img/projects/firework2.jpg';
 import grass1 from './img/projects/grass1.jpg';
 import grass2 from './img/projects/grass2.jpg';
-import tank1 from './img/projects/tank1.jpg';
-import tank2 from './img/projects/tank2.jpg';
+import tank1 from './img/projects/tank1.png';
+import tank2 from './img/projects/tank2.png';
 import ironman1 from './img/projects/iron-man1.jpg';
 import ironman2 from './img/projects/iron-man2.jpg';
 
