@@ -9,8 +9,10 @@ import firework1 from './img/projects/firework1.gif';
 import firework2 from './img/projects/firework2.jpg';
 import grass1 from './img/projects/grass1.jpg';
 import grass2 from './img/projects/grass2.jpg';
-import camera1 from './img/projects/camera1.jpg';
-import camera2 from './img/projects/camera2.jpg';
+import tank1 from './img/projects/tank1.jpg';
+import tank1 from './img/projects/tank2.jpg';
+import ironman1 from './img/projects/iron-man1.jpg';
+import ironman2 from './img/projects/iron-man2.jpg';
 
 export const MovieState = () => {
   return [
@@ -114,21 +116,40 @@ export const MovieState = () => {
       ],
     },
     {
-      name: 'Camera',
-      mainImg: camera1,
-      secondaryImg: camera2,
-      url: '/projects/camera',
+      name: 'Tank M1 ABRAMS',
+      mainImg: tank1,
+      secondaryImg: tank2,
+      url: '/projects/tank-m1-abrams',
       type: 'image',
       id: 5,
       awards: [
         {
           title: 'About Project',
-          description: 'A camera model used for videos or games or movie shots',
+          description: 'A tank model used for videos or games or movie shots',
         },
         {
           title: 'What I did',
           description:
-            'It took me 3 hours to create this image. The image is created in a full blender',
+            'It took me 3 days to create this image. The image is created in a full blender',
+        },
+      ],
+    },
+    {
+      name: 'Iron Man Head',
+      mainImg: ironman1,
+      secondaryImg: ironman2,
+      url: '/projects/iron-man-head',
+      type: 'image',
+      id: 5,
+      awards: [
+        {
+          title: 'About Project',
+          description: 'A tank model used for videos or games or movie shots',
+        },
+        {
+          title: 'What I did',
+          description:
+            'It took me 5 hours to create this image. The image is created in a full blender',
         },
       ],
     },
