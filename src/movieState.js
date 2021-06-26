@@ -13,6 +13,10 @@ import tank1 from './img/projects/tank1.png';
 import tank2 from './img/projects/tank2.png';
 import ironman1 from './img/projects/iron-man1.jpg';
 import ironman2 from './img/projects/iron-man2.jpg';
+import swHead1 from './img/projects/sw_head1.jpg';
+import swHead2 from './img/projects/sw_head2.jpg';
+import nasos1 from './img/projects/nasos1.jpg';
+import nasos2 from './img/projects/nasos2.jpg';
 
 export const MovieState = () => {
   return [
@@ -140,7 +144,7 @@ export const MovieState = () => {
       secondaryImg: ironman2,
       url: '/projects/iron-man-head',
       type: 'image',
-      id: 5,
+      id: 6,
       awards: [
         {
           title: 'About Project',
@@ -150,6 +154,44 @@ export const MovieState = () => {
           title: 'What I did',
           description:
             'It took me 5 hours to create this image. The image is created in a full blender',
+        },
+      ],
+    },
+    {
+      name: 'Startwars Head',
+      mainImg: swHead1,
+      secondaryImg: swHead2,
+      url: '/projects/sw-head',
+      type: 'image',
+      id: 7,
+      awards: [
+        {
+          title: 'About Project',
+          description: 'I am gonna use this head for games. It is awesome. I use sculping for this project',
+        },
+        {
+          title: 'What I did',
+          description:
+            'It took me 3 hours to create this image. The image is created in a full blender',
+        },
+      ],
+    },
+    {
+      name: 'Without Oxygen',
+      mainImg: nasos1,
+      secondaryImg: nasos2,
+      url: '/projects/without-oxygen',
+      type: 'image',
+      id: 8,
+      awards: [
+        {
+          title: 'About Project',
+          description: 'This stage image is used for graphics in movies',
+        },
+        {
+          title: 'What I did',
+          description:
+            'It took me 6 hours to create this image. The image is created in a full blender',
         },
       ],
     },
