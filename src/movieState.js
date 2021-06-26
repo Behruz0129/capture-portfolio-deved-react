@@ -207,7 +207,7 @@ export const MovieState = () => {
       awards: [
         {
           title: 'About Project',
-          description: 'I have seen a lot of Apple'\'s trailer, i made this video. You can see full video here 👉https://www.youtube.com/watch?v=ZCQLnmqWSoU',
+          description: 'I have seen a lot of Apple'\'s trailer, i made this video. You can see full video in my youtube channel',
         },
         {
           title: 'What I did',
