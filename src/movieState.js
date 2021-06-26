@@ -18,7 +18,7 @@ import swHead2 from './img/projects/sw_head2.jpg';
 import nasos1 from './img/projects/nasos1.jpg';
 import nasos2 from './img/projects/nasos2.jpg';
 import iPhone1 from './img/projects/iphoneseven1.gif';
-import iPhone2 from './img/projects/iphoneseven2.png';
+import iPhone2 from './img/projects/iphoneseven.png';
 
 export const MovieState = () => {
   return [
