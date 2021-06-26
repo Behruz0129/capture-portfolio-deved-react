@@ -17,6 +17,8 @@ import swHead1 from './img/projects/sw_head1.jpg';
 import swHead2 from './img/projects/sw_head2.jpg';
 import nasos1 from './img/projects/nasos1.jpg';
 import nasos2 from './img/projects/nasos2.jpg';
+import iPhone1 from './img/projects/iphoneseven1.gif';
+import iPhone2 from './img/projects/iphoneseven2.png';
 
 export const MovieState = () => {
   return [
@@ -192,6 +194,25 @@ export const MovieState = () => {
           title: 'What I did',
           description:
             'It took me 6 hours to create this image. The image is created in a full blender',
+        },
+      ],
+    },
+    {
+      name: 'iPhone7 Trailer',
+      mainImg: iPhone1,
+      secondaryImg: iPhone2,
+      url: '/projects/iphone-trailer',
+      type: 'image',
+      id: 9,
+      awards: [
+        {
+          title: 'About Project',
+          description: 'I have seen a lot of Apple'\'s trailer, i made this video. You can see full video here 👉https://www.youtube.com/watch?v=ZCQLnmqWSoU',
+        },
+        {
+          title: 'What I did',
+          description:
+            'It took me 2 days to create this trailer. The video is created in a blender and i used filmora for editing',
         },
       ],
     },
