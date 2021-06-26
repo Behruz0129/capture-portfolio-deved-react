@@ -202,12 +202,12 @@ export const MovieState = () => {
       mainImg: iPhone1,
       secondaryImg: iPhone2,
       url: '/projects/iphone-trailer',
-      type: 'image',
+      type: 'video',
       id: 9,
       awards: [
         {
           title: 'About Project',
-          description: 'I have seen a lot of Apple\'s trailer, i made this video. You can see full video in my youtube channel',
+          description: 'I have seen a lot of trailers, i like those, so , i made iPhone trailer. You can see full video in my youtube channel',
         },
         {
           title: 'What I did',
