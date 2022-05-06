@@ -23,9 +23,75 @@ import castle1 from './img/projects/castle1.jpg';
 import castle2 from './img/projects/castle2.jpg';
 import bedroom1 from './img/projects/bedroom1.png';
 import bedroom2 from './img/projects/bedroom2.png';
+import shark1 from './img/projects/shark1.jpg'
+import shark2 from './img/projects/shark2.jpg'
+import parkingplace1 from './img/projects/parkingplace1.jpg'
+import parkingplace2 from './img/projects/parkingplace2.jpg'
+import oldtavern1 from './img/projects/oldtavern1.jpg'
+import oldtavern2 from './img/projects/oldtavern2.jpg'
 
 export const MovieState = () => {
   return [
+    {
+      name: 'Old Tavern',
+      mainImg: oldtavern1,
+      secondaryImg: oldtavern2,
+      url: '/projects/oldtavern',
+      type: 'photo',
+      id: 14,
+      awards: [
+        {
+          title: 'About Project',
+          description:
+            'This model can be used in the field of cinematography, game applications. The model`s grid is low poly.',
+        },
+        {
+          title: 'What I did',
+          description:
+            'This model used a particle system and was created in 1 day. The part has been edited and colored in a realistic way.',
+        },
+      ],
+    },
+    {
+      name: 'Parking Place',
+      mainImg: parkingplace1,
+      secondaryImg: parkingplace2,
+      url: '/projects/parkingplace',
+      type: 'photo',
+      id: 13,
+      awards: [
+        {
+          title: 'About Project',
+          description:
+            'This model can be used in the field of cinematography, game applications. The model`s grid is low poly.',
+        },
+        {
+          title: 'What I did',
+          description:
+            'This model used a particle system and was created in 1 day. The part has been edited and colored in a realistic way.',
+        },
+      ],
+    },
+    {
+      name: 'Shark',
+      mainImg: shark1,
+      secondaryImg: shark2,
+      url: '/projects/shark',
+      type: 'photo',
+      id: 12,
+      awards: [
+        {
+          title: 'About Project',
+          description:
+            'This model can be used in the field of cinematography, game applications. The model`s grid is low poly.',
+        },
+        {
+          title: 'What I did',
+          description:
+            'This model used a particle system and was created in 1 day. The part has been edited and colored in a realistic way.',
+        },
+      ],
+    },
     {
       name: 'Bedroom',
       mainImg: bedroom1,
