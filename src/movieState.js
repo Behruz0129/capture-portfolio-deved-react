@@ -1,46 +1,46 @@
 //import images
-import paint1 from './img/projects/paint1.gif';
-import paint2 from './img/projects/paint2.png';
+import kangaroo1 from './img/projects/kangaroo.jpg';
+import kangaroo2 from './img/projects/kangaroo.jpg';
 
 export const MovieState = () => {
   return [
     {
-      name: 'Worn Paint',
-      mainImg: paint1,
-      secondaryImg: paint2,
-      url: '/projects/worn-paint',
-      type: 'video',
+      name: 'Kangaroo',
+      mainImg: kangaroo1,
+      secondaryImg: kangaroo2,
+      url: '/projects/kangaroo',
+      type: 'photo',
       id: 0,
       awards: [
         {
           title: 'About Project',
           description:
-            'This project can be used for advertising for paints or similar scenes',
+            'This model can be used in the field of cinematography, game applications. The model`s grid is low poly.',
         },
         {
           title: 'What I did',
           description:
-            'It took me 1 hour to create this video. The video is created in a full blender',
+            'This model used a particle system and was created in 1 day. The part has been edited and colored in a realistic way.',
         },
       ],
     },
-     {
-      name: 'Worn Paint',
-      mainImg: paint1,
-      secondaryImg: paint2,
-      url: '/projects/worn-paint',
-      type: 'video',
+    {
+      name: 'Kangaroo',
+      mainImg: kangaroo1,
+      secondaryImg: kangaroo2,
+      url: '/projects/kangaroo',
+      type: 'photo',
       id: 0,
       awards: [
         {
           title: 'About Project',
           description:
-            'This project can be used for advertising for paints or similar scenes',
+            'This model can be used in the field of cinematography, game applications. The model`s grid is low poly.',
         },
         {
           title: 'What I did',
           description:
-            'It took me 1 hour to create this video. The video is created in a full blender',
+            'This model used a particle system and was created in 1 day. The part has been edited and colored in a realistic way.',
         },
       ],
     },
