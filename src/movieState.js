@@ -24,6 +24,26 @@ export const MovieState = () => {
         },
       ],
     },
+     {
+      name: 'Worn Paint',
+      mainImg: paint1,
+      secondaryImg: paint2,
+      url: '/projects/worn-paint',
+      type: 'video',
+      id: 0,
+      awards: [
+        {
+          title: 'About Project',
+          description:
+            'This project can be used for advertising for paints or similar scenes',
+        },
+        {
+          title: 'What I did',
+          description:
+            'It took me 1 hour to create this video. The video is created in a full blender',
+        },
+      ],
+    },
   ];
 };
 
