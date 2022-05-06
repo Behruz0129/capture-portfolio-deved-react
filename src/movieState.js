@@ -27,6 +27,26 @@ import bedroom2 from './img/projects/bedroom2.png';
 export const MovieState = () => {
   return [
     {
+      name: 'Bedroom',
+      mainImg: bedroom1,
+      secondaryImg: bedroom2,
+      url: '/projects/bedroom',
+      type: 'photo',
+      id: 11,
+      awards: [
+        {
+          title: 'About Project',
+          description:
+            'This model can be used in the field of cinematography, game applications. The model`s grid is low poly.',
+        },
+        {
+          title: 'What I did',
+          description:
+            'This model used a particle system and was created in 1 day. The part has been edited and colored in a realistic way.',
+        },
+      ],
+    },
+    {
       name: 'Castle',
       mainImg: castle1,
       secondaryImg: castle2,
