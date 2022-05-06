@@ -1,6 +1,6 @@
 //import images
-import kangaroo1 from './img/projects/kangaroo.jpg';
-import kangaroo2 from './img/projects/kangaroo.jpg';
+import kangaroo1 from './img/projects/kangaroo1.jpg';
+import kangaroo2 from './img/projects/kangaroo2.jpg';
 import iphoneseven1 from './img/projects/iphoneseven1.gif'
 import iphoneseven2 from './img/projects/iphoneseven.png'
 
