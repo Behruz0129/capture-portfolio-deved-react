@@ -15,7 +15,7 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        'service_k152ipp',
+        'curious-gamil',
         'template_sfir81w',
         e.target,
         'user_76r5jRtM5Oo3roPYZNtnd'
